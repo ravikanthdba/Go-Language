@@ -45,5 +45,10 @@ func main() {
        The default value for Float64 is 0.
        The default value for boolean is false.
        The default value for string is "". */
+    
+    /* Zero value works only during the method of "Assign". The below throws an error message 
+     variablen :=  ;
+     fmt.Println("%v",variablen);
+    */
 
 }
