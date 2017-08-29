@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-    /* This method is called initialization.*/
+    /* This method is called initialization. Short Hand Notation */
 
      a := 32       // initialize a variable
      fmt.Println("This line is using Println: %d is of type %T", a,a) // This by default goes to the new line once the program is completed.
@@ -50,5 +50,26 @@ func main() {
      variablen :=  ;
      fmt.Println("%v",variablen);
     */
+
+    /* Boolean Values */
+
+    /* The Logical Operators are given by 
+       "&&" for "AND" 
+       "||" for "OR"
+       "!"  for "NOT"
+       The values for boolean are assign by "true" and "false" (Everything in lower case)
+    */
+
+    var bool_val_a bool = true;
+    var bool_val_b bool = false;
+    var bool_val_result bool;
+    bool_val_result = bool_val_a && bool_val_b;
+    fmt.Printf("The result of %t and %t is %t\n",bool_val_a,bool_val_b,bool_val_result)
+    bool_val_result = bool_val_a || bool_val_b;
+    fmt.Printf("The result of %t or %t is %t\n",bool_val_a,bool_val_b,bool_val_result)
+    bool_val_result = !(bool_val_a || bool_val_b);
+    fmt.Printf("The result of !(%t or %t) is %t\n",bool_val_a,bool_val_b,bool_val_result)
+    bool_val_result = !(bool_val_a && bool_val_b);
+    fmt.Printf("The result of !(%t and %t) is %t\n",bool_val_a,bool_val_b,bool_val_result)
 
 }
